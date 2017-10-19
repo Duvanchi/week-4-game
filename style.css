@@ -1,0 +1,43 @@
+#game-title {
+	float: right;
+}
+
+button.charSelect {
+	font-size: 10px;
+	text-align: center;
+}
+
+#vader-pic {
+	height: 100px;
+	width: 150px;
+}
+
+#palp-pic {
+	height: 100px;
+	width: 150px;
+}
+
+#boba-pic {
+	height: 100px;
+	width: 150px;
+}
+
+#luke-pic {
+	height: 100px;
+	width: 150px;
+}
+
+#leia-pic {
+	height: 100px;
+	width: 150px;
+}
+
+#han-pic {
+	height: 100px;
+	width: 150px;
+}
+
+body {
+	background-image: url("GameBackground.jpg");
+}
+/* Must. Fix. Character. Select. Boxes.*/

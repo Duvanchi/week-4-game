@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Star Wars RPG</title>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+
+	var darthVader = {
+		name: "Darth Vader";
+		health: 150;
+		attack: 10;
+		counterAttack: 20;
+	}
+
+	var palpatine {
+		name: "Emperor Palpatine";
+		health: 100;
+		attack: 20;
+		counterAttack: 30;
+	}
+
+	var bobaFett {
+		name: "Boba Fett";
+		health: 125;
+		attack: 15;
+		counterAttack: 25;
+	}
+
+	var lukeSkywalker {
+		name: "Luke Skywalker"
+		health: 150;
+		attack: 10;
+		counterAttack: 20;
+	}
+
+	var princessLeia {
+		name: "Princess Leia"
+		health: 100;
+		attack: 20;
+		counterAttack: 30;
+	}
+
+	var hanSolo {
+		name: "Han Solo";
+		health: 125;
+		attack: 15;
+		counterAttack: 25;
+	}
+
+
+	$('.charSelect').on('click', function() {
+		console.log('click');
+		$('.charSelect').append("#attackersection")
+	})
+	
+	// Ok so from here I need (for JS):
+
+	// 	1. Character Select
+	// 	2. Defender Select
+	// 	3. Move Images to correct position
+	//  3.5: Assign Objects to pictures
+	// 	4. Gameplay
+	// 	5. Attack power increase
+	// 	6. Win/Loss
+	//  7. Probably More 
+
+
+
+
+
+})
+
+
+		
+
+	</script>
+
+</body>
+</html>
