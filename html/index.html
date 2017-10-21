@@ -9,11 +9,11 @@
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-	<script src="script.js"></script>
+	<script src="../assets/javascript/script.js"></script>
 
 
 
@@ -32,16 +32,19 @@
 
 <!-- Character Images/Character Select -->
 	<!--sub-rows and sub-columns!-->
+	<!--You can attach health & attack values in the id tag, then convert strings into integers for combat-->
+	<h2 id="pick">Pick your character!</h2>
 	<div class="container">
 		<div class="row">
 			<div class="col-med-2">
-				<button id="vader" class="charSelect"><img id="vader-pic" src="vader.jpg"></button>
-				<button id="palpatine" class="charSelect"><img id="palp-pic" src="Palpatine.png"></button>
-				<button id="bobafett" class="charSelect"><img id="boba-pic" src="BobaFett.jpeg"></button>
-				<button id="luke" class="charSelect"><img id="luke-pic" src="LukeSkywalker.png"></button>
-				<button id="leia" class="charSelect"><img id="leia-pic" src="Leia.jpg"></button>
-				<button id="han" class="charSelect"><img id="han-pic" src="Han.jpg"></button>
+				<button id="vader" class="charSelect" health="170" attack="10"><img id="vader-pic" src="../assets/images/vader.jpg"></button>
+				<button id="palpatine" class="charSelect" health="120" attack="20"><img id="palp-pic" src="../assets/images/Palpatine.png"></button>
+				<button id="bobafett" class="charSelect" health="145" attack="15"><img id="boba-pic" src="../assets/images/BobaFett.jpeg"></button>
+				<button id="luke" class="charSelect" health="170" attack="10"><img id="luke-pic" src="../assets/images/LukeSkywalker.png"></button>
+				<button id="leia" class="charSelect" health="120" attack="20"><img id="leia-pic" src="../assets/images/Leia.jpg"></button>
+				<button id="han" class="charSelect" health="145" attack="15"><img id="han-pic" src="../assets/images/Han.jpg"></button>
 			</div>
+			<p id="info">health:170 attack:10 - health:120 attack:20 - health:145 attack:15 --- health:170 attack:10 - health:120 attack:20 - health:145 attack:15 </p>
 		</div>
 	</div>
 
@@ -53,6 +56,8 @@
 			<div class="row">
 				<div class="col-med-4">
 					<p id="attackersection"></p>
+					<p id="hp"></p>
+					<p id="ap"></p>
 				</div>
 			</div>
 		</div>
@@ -63,6 +68,7 @@
 			<div class="row">
 				<div class="col-med-4">
 					<p id="enemysection"></p>
+					<p id="tellem"></p>
 				</div>
 			</div>
 		</div>
@@ -78,9 +84,17 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-med-4">
-					<p id="defendersection"></p>
+					<div class="removal">
+						<p id="defendersection"></p>
+						<p id="ehp"></p>
+						<p id="eap"></p>
+					</div>
 				</div>
 			</div>
+		</div>
+
+		<div class="resetbutton">
+			<button type="button" class="btn btn-default">Reset</button>
 		</div>
 
 <script type="text/javascript"></script>

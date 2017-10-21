@@ -40,4 +40,24 @@ button.charSelect {
 body {
 	background-image: url("GameBackground.jpg");
 }
-/* Must. Fix. Character. Select. Boxes.*/
+
+p {
+	font-size: 16px;
+	font-weight: bolder;
+}
+
+#hp {
+	color: blue;
+}
+
+#ap {
+	color: red;
+}
+
+#ehp {
+	color: red;
+}
+
+#eap {
+	color: blue;
+}
